@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css.css"/>  
+</head>
+<body>
+<div class="container d-flex justify-content-center">
+<form method="POST" enctype="application/x-www-form-urlencoded" id="form1">
+    <div class="input-group">
+        <label for="usrname">Username</label>
+        <input type="text" id="usrname" name="usrname" class="mb-1" required>
+    </div>
+    <div>
+        <label for="psw">Password</label>
+        <input type="password" id="PassEntry" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" required>
+    </div>
+    <div>
+        <input type="checkbox" class="mb-2" onclick="func()">Show Password
+    </div>
+    <div>
+        <input type="submit" value="Submit" class="btn btn-success w-100"> 
+    </div> 
+    <div>
+    <span id="StrengthDisp" class="badge displayBadge"></span> 
+    </div>   
+</form>
+</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="exercise.js"></script>
+</body>
+</html>
